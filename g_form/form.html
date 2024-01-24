@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 태그와 input 태그</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="user-id" placeholder="아이디" required>
+        <input type="password" name="user-password" placeholder="비밀번호" required>
+        <fieldset>
+            <legend>성별</legend>
+            <!-- radio 는 단일선택, checkbox는 다중 선택-->
+            <label>
+                <input type="radio" name="gender"> 선택 안함 
+            </label>
+            <label>
+                <input type="radio" name="gender"> 여자
+            </label>
+
+            <label for="gender">
+                남자
+            </label>
+            <input type="radio" name="gender" id = "gender" value = "남자"> 
+        <fieldset>
+            <legend>취미</legend>
+            <label><input type="checkbox" name="hobby" value="영화감상"> 영화감상</label>
+            <label><input type="checkbox" name="hobby" value="골프"> 골프</label>
+            <label><input type="checkbox" name="hobby" value="볼링"> 볼링</label>
+            <label><input type="checkbox" name="hobby" value="기타"> 기타</label>
+            <label><input type="checkbox" name="hobby" value="테니스"> 테니스</label>
+            <label><input type="checkbox" name="hobby" value="산책"> 산책</label>
+            <label><input type="checkbox" name="hobby" value="연애"> 연애</label>
+            <label><input type="checkbox" name="hobby" value="게임"> 게임</label>
+            <label><input type="checkbox" name="hobby" value="등산"> 등산</label>
+            <label><input type="checkbox" name="hobby" value="축구"> 축구</label>
+            <label><input type="checkbox" name="hobby" value="노래"> 노래</label>
+        </fieldset>
+    
+        </fieldset>
+        <div> <!--div는 아무 스타일이 없음-->
+            <input type="date">
+        </div>
+        <div>
+            <input type="datetime-local">
+        </div>
+        <div>
+            <select name="" id="">
+
+            </select>
+        </div>
+        <div>
+            <textarea cols="30" rows="3">상품명:</textarea>
+        </div>
+        
+        <!--for 를 써야하는 이유-->
+        <label for ="file">
+            <img src="icon1.png" alt="">
+        </label>
+        <input type="file" name="" id="" style="display: none">
+        <div>
+            <input type="submit" value="완료">
+        </div>
+    </form>
+</body>
+</html>
